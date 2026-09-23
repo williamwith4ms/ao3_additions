@@ -51,3 +51,9 @@ button:hover {
     color : #900;
     box-shadow: inset 2px 2px 2px #bbb;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}

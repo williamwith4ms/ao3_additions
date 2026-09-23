@@ -117,3 +117,9 @@ main {
 .result-limit label {
     padding-top: 0.3em;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}

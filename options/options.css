@@ -31,3 +31,9 @@ button:hover {
     border: 1px solid #bbb;
     border-radius: 0.25em;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}

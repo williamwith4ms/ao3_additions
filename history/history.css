@@ -108,3 +108,9 @@ ul {
     padding-right: 0.5em;
     padding-left: 0.5em;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
