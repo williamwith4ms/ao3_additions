@@ -19,6 +19,7 @@ Currently adds:
 - [ ] Automatic mark as read when reaching the end of a work
 - [ ] Per chapter mark as read
 - [ ] use `browser.storage.sync` to sync history (would require only storing the id and then having a system to fetch the work data from the id)
+  - could also use a third party service e.g. google drive or my server 
 - [ ] actually publish it to the mozilla store
 - [x] have an icon for the extension
 - [ ] make it look pretty
