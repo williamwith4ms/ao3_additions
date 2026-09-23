@@ -19,6 +19,11 @@
         injectBlockButton(tagName);
     }
 
+    function markExtensionButton(button) {
+        button.classList.add("ao3ext_button");
+        return button;
+    }
+
     async function injectBlockButton(tagName) {
         const nav = document.querySelector("#main .user.navigation.actions");
         if (!nav) {
@@ -27,7 +32,7 @@
         }
 
         const listItem = document.createElement("li");
-        const blockButton = document.createElement("button");
+        const blockButton = markExtensionButton(document.createElement("button"));
         if (await isBlocked(tagName)) {
             blockButton.textContent = "Unblock Tag";
         } else {
@@ -112,7 +117,7 @@
                     blurb.before(blurContainer);
                     blurb.classList.add("ao3ext_blurred");
                     blurContainer.appendChild(blurb);
-                    const unhideButton = document.createElement("button");
+                    const unhideButton = markExtensionButton(document.createElement("button"));
                     unhideButton.textContent = "Unhide Work";
                     unhideButton.classList.add("ao3ext_unhide_button");
 
@@ -136,7 +141,7 @@
         }
 
         const listItem = document.createElement("li");
-        const readButton = document.createElement("button");
+        const readButton = markExtensionButton(document.createElement("button"));
 
         readButton.textContent = await isRead(workId) ? "Unmark as Read" : "Mark as Read";
 

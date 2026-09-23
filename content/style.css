@@ -2,6 +2,16 @@
     opacity: 0.5;
 }
 
+.ao3ext_button::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.35em;
+    background: url("../icons/icon-16.png") center / contain no-repeat;
+    vertical-align: -0.15em;
+}
+
 .ao3ext_read_badge {
     background-color: #900;
     color: #fff;
