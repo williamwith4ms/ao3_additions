@@ -24,5 +24,6 @@ Currently adds:
 - [ ] make it look pretty
 - [x] organise the files better
 - [ ] track the time spent reading and use the word count to estimate reading speed
+- [ ] dark mode
 
 Disclaimer: This is not an official extension.
